@@ -8,7 +8,7 @@ from rest_framework import generics,mixins, serializers
 from rest_framework import viewsets
 
 
-# model-view-set      {all operation:- primery-key based and non-primery key based}...
+# model-view-set      {all operation:- primery-key based and non-primery key based}    ReadOnlyModelViewSet...
 class product_CRUD(viewsets.ModelViewSet):
     queryset = Item.objects.all()
     serializer_class = productSerializer
