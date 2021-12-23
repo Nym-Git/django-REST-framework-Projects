@@ -1,7 +1,7 @@
 # djangoRESTframework-Project
 
 
-<b>Filter:</b>
+<b>Filters installation on CMD:</b>
 <p>-> go to cmd</p>
 <p>-> search python</p>
 <p>-> open file location</p>
