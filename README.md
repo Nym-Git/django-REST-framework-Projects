@@ -1,4 +1,4 @@
-# djangoRESTframework-Project
+# djangoRESTframework installation guide
 
 
 <b>Filters installation on CMD:</b>
