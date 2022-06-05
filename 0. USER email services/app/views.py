@@ -7,6 +7,7 @@ from rest_framework.response import Response
 from rest_framework.decorators import api_view
 from app.email_service import send_mail
 
+#test = ['nemagoswami00@gmail.com','codelib0@gmail.com','nemachandragoswami0099@gmail.com']
 
 @csrf_exempt
 @api_view(['POST'])
@@ -17,3 +18,5 @@ def parameter(request):
         body = request.data.get('body')
         send_mail(to_email,subject,body)
         return Response({"success":"email has sent"})
+
+
