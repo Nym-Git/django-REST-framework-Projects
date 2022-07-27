@@ -44,7 +44,7 @@ def phone_otp(request):
     print(e)
     pass
    #For testing
-   if phone_number:
+   if phone_number == "9369841533":
     otp = 123456
    else:
     otp = random.randint(100000, 999999)
@@ -56,12 +56,12 @@ def phone_otp(request):
    )
    otpRecord.save()
 
-   # url = f"https://ib0lkqmctk.execute-api.ap-south-1.amazonaws.com/dev/otp/?phone_number={phone_number}&otp={otp}"
-   # if phone_number >= "9876500000" and phone_number <= "9876500100":
-   jsonData = ""
-   # else:
-   #   data = requests.get(url)
-   #   jsonData = data.json()
+   url = f"https://ib0lkqmctk.execute-api.ap-south-1.amazonaws.com/dev/otp/?phone_number={phone_number}&otp={otp}"
+   if phone_number >= "9876500000" and phone_number <= "9876500100":
+    jsonData = ""
+   else:
+    data = requests.get(url)
+    jsonData = data.json()
    return Response({"message": "otp sent", "session_id": session_id, "microservice_response": jsonData}, status=status.HTTP_200_OK)
  else:
   return Response({"message": "phone number is not linked to any account"}, status=status.HTTP_400_BAD_REQUEST)
