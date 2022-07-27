@@ -1,0 +1,13 @@
+boto3==1.21.35
+Django==4.0.3
+djangorestframework==3.13.1
+djangorestframework_simplejwt==5.1.0
+numpy==1.22.3
+pandas==1.4.2
+python-decouple==3.6
+requests==2.22.0
+sshtunnel==0.4.0
+django-cors-headers==3.13.0
+mysqlclient==2.1.0
+reportlab==3.6.3
+xlsxwriter
